@@ -1,0 +1,23 @@
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+.venv/
+venv/
+
+# Keep the Chroma DB (it ships with the repo)
+# but ignore large model caches
+.cache/
+sentence_transformers_cache/
+
+# Next.js
+frontend/.next/
+frontend/node_modules/
+frontend/.env.local
+
+# Data — keep articles.jsonl and chroma_db, ignore large intermediates
+data/eval/qa_pairs.jsonl.bak
+data/eval/rag_cache.jsonl
+data/eval/ragas_score_cache.json
